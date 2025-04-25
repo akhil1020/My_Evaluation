@@ -10,12 +10,11 @@
 import re
 from collections import defaultdict, Counter
 
-# Define a basic set of common stop words
+
 STOP_WORDS = set([
     'the', 'is', 'at', 'on', 'in', 'and', 'a', 'an', 'of', 'to', 'with', 'that', 'this', 'for', 'from'
 ])
 
-# Trie node structure
 class TrieNode:
     def __init__(self):
         self.children = {}
@@ -42,7 +41,6 @@ class Trie:
             node = node.children[char]
         return node.words
 
-# Main analyzer class
 class TextAnalyzer:
     def __init__(self, text):
         self.word_freq = Counter()
@@ -60,7 +58,7 @@ class TextAnalyzer:
         words = self.trie.get_words_with_prefix(prefix.lower())
         return sorted(words, key=lambda w: self.word_freq[w], reverse=True)[:n]
 
-# Example Usage
+
 paragraph = """
 The thunder rolled in the distance as the thoughtful thinker sat on the porch.
 There was a thrill in the air, thick with anticipation and the smell of rain.

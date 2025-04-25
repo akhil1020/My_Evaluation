@@ -55,6 +55,5 @@ def calculate_electricity_bill(units):
 
     print(f"\nTotal Amount Payable = ₹{total_bill}")
 
-# Input from user
 usage = int(input("Enter electricity usage (in kWh): "))
 calculate_electricity_bill(usage)

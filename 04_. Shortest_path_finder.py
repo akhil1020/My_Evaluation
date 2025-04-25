@@ -1,7 +1,6 @@
 import heapq
 
 def dijkstra(graph, start, destination):
-    # Min-heap to track (distance_so_far, current_city, path_so_far)
     heap = [(0, start, [start])]
     visited = set()
 

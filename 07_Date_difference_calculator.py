@@ -10,16 +10,14 @@
 from datetime import datetime
 
 def date_difference(start_date_str, end_date_str):
-    # Convert string to datetime objects
     date_format = "%d-%m-%Y"
     start_date = datetime.strptime(start_date_str, date_format)
     end_date = datetime.strptime(end_date_str, date_format)
 
-    # Calculate difference
+    
     difference = end_date - start_date
     return difference.days
 
-# Example usage
 birthdate = input("Enter your birthdate (dd-mm-yyyy): ")
 today = input("Enter today's date (dd-mm-yyyy): ")
 

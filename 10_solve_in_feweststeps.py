@@ -10,14 +10,11 @@
 #
 #-----solution---------
 def solve_in_fewest_steps(s):
-    # Separate letters and digits using list comprehensions
     letters = ''.join(sorted([ch for ch in s if ch.isalpha()]))
     digits = ''.join(sorted([ch for ch in s if ch.isdigit()]))
     
-    # Concatenate letters and digits
     return letters + digits
 
-# Example usage
 
 input_string = "B4A1D3"
 output_string = solve_in_fewest_steps(input_string)

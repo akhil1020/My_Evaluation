@@ -20,7 +20,7 @@ def max_tasks(tasks):
 
     tasks.sort(key=lambda x: x['deadline'])
     
-    max_heap = []  # We'll store negative durations to simulate a max-heap
+    max_heap = []  
     time_used = 0
 
     for task in tasks:
@@ -37,7 +37,7 @@ def max_tasks(tasks):
 
     return len(max_heap)
 
-# 🔧 Example
+
 tasks = [
     {'name': 'Task 1', 'deadline': 4, 'duration': 2},
     {'name': 'Task 2', 'deadline': 3, 'duration': 1},

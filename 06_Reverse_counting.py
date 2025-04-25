@@ -9,5 +9,4 @@ def reverse_count(n):
     print(n)
     reverse_count(n - 1)
 
-# Start reverse counting from 1000
 reverse_count(1000)

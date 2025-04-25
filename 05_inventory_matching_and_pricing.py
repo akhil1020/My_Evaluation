@@ -49,7 +49,7 @@ def check_order(inventory, order, budget):
         print(f"Total Cost: {total_cost}")
 
 
-# ==== Sample Input ====
+
 inventory = {
     'apple': {'quantity': 100, 'price': 2},
     'banana': {'quantity': 50, 'price': 1},
@@ -64,5 +64,5 @@ order = {
 
 budget = 80
 
-# ==== Run the function ====
+
 check_order(inventory, order, budget)
